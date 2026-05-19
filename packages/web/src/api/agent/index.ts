@@ -1,9 +1,9 @@
 import { stepCountIs, ToolLoopAgent } from "ai";
 import dedent from "dedent";
-import { anthropic } from "./gateway";
+import { google } from "./gateway";
 
 export const agent = new ToolLoopAgent({
-  model: anthropic("claude-sonnet-4-20250514"),
+  model: google("gemini-2.5-flash"),
   instructions: [
     {
       role: "system",
